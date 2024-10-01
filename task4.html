@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            color: rgb(103, 57, 194);
+            list-style: "- ";
+            font-style: oblique;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let arr=["dog","cat","bird","fish"]
+        let str =  arr.map(word=>word.split('').reverse().join(''))
+        let ul = document.createElement("ul")
+        str.forEach(reversedWord=> {
+            let li = document.createElement("li")
+            li.textContent = reversedWord
+            ul. appendChild(li) 
+        })
+        document.body.appendChild(ul)
+    </script>
+</body>
+</html>

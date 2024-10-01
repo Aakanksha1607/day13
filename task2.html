@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ["hello", "world","javascript","dom"]
+        let arr1= arr.map(array=>array.toUpperCase())
+       let para=document.createElement("p")
+        para.innerText=arr1.join(" ")
+        para.style.color="red"
+        // para.style.font-size= "20px"
+        document.body.appendChild(para)  
+    </script>
+
+</body>
+</html>
